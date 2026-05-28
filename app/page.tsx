@@ -94,11 +94,9 @@ export default function Home() {
       >
         {/* 배경 로고 */}
         <div
-          className="absolute inset-0"
+          className="hero-bg absolute inset-0"
           style={{
             backgroundImage: `url(/logo.png)`,
-            backgroundSize: '500px',
-            backgroundPosition: 'center 140px',
             backgroundRepeat: 'no-repeat',
             opacity: 0.25,
           }}
@@ -109,27 +107,27 @@ export default function Home() {
           style={{ background: 'linear-gradient(to bottom, transparent, #52412F)' }}
         />
 
-        <div className="max-w-5xl mx-auto text-center relative z-10 py-20">
-          <p className="text-xs tracking-[0.4em] mb-6 font-medium" style={{ color: '#D4A96A' }}>
+        <div className="max-w-5xl mx-auto text-center relative z-10 py-16 md:py-20 px-4">
+          <p className="text-xs tracking-[0.4em] mb-4 md:mb-6 font-medium" style={{ color: '#D4A96A' }}>
             PREMIUM ENGLISH EDUCATION
           </p>
-          <h1 className="text-7xl font-bold mb-6 tracking-wide" style={{ color: '#FFFFFF' }}>
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 md:mb-6 tracking-wide" style={{ color: '#FFFFFF' }}>
             이수진 영어
           </h1>
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="h-px w-16" style={{ backgroundColor: '#D4A96A' }} />
+          <div className="flex items-center justify-center gap-3 mb-6 md:mb-8">
+            <div className="h-px w-12 md:w-16" style={{ backgroundColor: '#D4A96A' }} />
             <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#D4A96A' }} />
-            <div className="h-px w-16" style={{ backgroundColor: '#D4A96A' }} />
+            <div className="h-px w-12 md:w-16" style={{ backgroundColor: '#D4A96A' }} />
           </div>
-          <p className="text-2xl mb-6 font-semibold italic" style={{ color: '#D4A96A' }}>
-            북일고 영어의 압도적 1위, 이수진이 증명합니다.
+          <p className="text-lg md:text-2xl mb-4 md:mb-6 font-semibold italic leading-snug" style={{ color: '#D4A96A' }}>
+            북일고 영어의 압도적 1위,<br className="md:hidden" /> 이수진이 증명합니다.
           </p>
-          <p className="text-lg mb-12 leading-loose max-w-2xl mx-auto font-normal" style={{ color: '#FFFFFF', opacity: 0.85 }}>
+          <p className="text-sm md:text-lg mb-10 md:mb-12 leading-loose max-w-2xl mx-auto font-normal" style={{ color: '#FFFFFF', opacity: 0.85 }}>
             24년차 베테랑(북일고 10년) 전문가가 만들어가는<br />
             체계적이고 차별화된 프리미엄 영어교육
           </p>
           <button
-            className="px-12 py-4 font-semibold tracking-widest text-sm transition-all hover:bg-transparent border cursor-pointer"
+            className="px-8 md:px-12 py-3 md:py-4 font-semibold tracking-widest text-sm transition-all hover:bg-transparent border cursor-pointer"
             style={{
               backgroundColor: '#D4A96A',
               color: '#FFFFFF',
